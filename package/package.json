@@ -1,0 +1,25 @@
+{
+  "name": "next-keep",
+  "version": "1.0.1",
+  "main": "lib/index.js",
+  "repository": "https://github.com/mdlindsey/next-keep",
+  "description": "Simple persisted memory store shared across server and client for NextJS",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "tsc": "rimraf lib && tsc"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.4",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.5"
+  }
+}

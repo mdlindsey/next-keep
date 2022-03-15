@@ -1,0 +1,16 @@
+{
+  "private": "true",
+  "scripts": {
+    "tsc": "lerna run tsc",
+    "test": "lerna run test",
+    "build": "lerna run build",
+    "example": "yarn tsc && cd example && yarn dev"
+  },
+  "workspaces": [
+    "example",
+    "package"
+  ],
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
