@@ -9,7 +9,7 @@ const propStore:GenericObject = {}
 async function PropLoader():Promise<any> {}
 type PropLoaderObject = Record<string, typeof PropLoader>
 
-async function KeepLoader(props?:PropLoaderObject, ttl:number=DEFAULT_TTL) {
+async function KeepLoader(props?:PropLoaderObject | GenericObject, ttl:number=DEFAULT_TTL) {
     const promises = []
     for(const key in props) {
         // if its a static value just save and move on
