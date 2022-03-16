@@ -3,7 +3,8 @@
   "scripts": {
     "tsc": "lerna run tsc",
     "test": "lerna run test",
-    "build": "lerna run build",
+    "build": "lerna run tsc && lerna run build",
+    "start": "cd example && yarn start",
     "example": "yarn tsc && cd example && yarn dev"
   },
   "workspaces": [
