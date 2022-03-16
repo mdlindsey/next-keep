@@ -1,9 +1,9 @@
+import keep from 'next-keep'
 import Markdown from 'markdown-to-jsx'
 import { useState } from 'react'
 import CopyButton from '~/components/CopyButton'
 import { RELEASE_SLICE_SIZE } from '~/config'
 import type { Project } from './_app'
-import keep from 'pkg/lib'
 
 const codeSample1 = '' +
 `// pages/_app.tsx

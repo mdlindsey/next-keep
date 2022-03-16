@@ -1,10 +1,10 @@
 import Head from 'next/head'
+import keep from 'next-keep'
 import type { AppContext, AppProps } from 'next/app'
 import { KEEP_TTL_MS } from '~/config'
 import { Repo, repoFactory } from '~/services/repo'
 import { Package, packageFactory } from '~/services/package'
 import packageJson from 'pkg/package.json'
-import keep from 'pkg/lib'
 
 export type Project = { repo: Repo } & { package: Package } & { updated: number }
 

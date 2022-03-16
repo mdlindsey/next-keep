@@ -1,6 +1,6 @@
 {
   "name": "next-keep",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "repository": "https://github.com/mdlindsey/next-keep",
   "description": "Simple persisted memory store shared across server and client for NextJS",
