@@ -4,7 +4,7 @@
     "tsc": "lerna run tsc",
     "test": "lerna run test",
     "build": "lerna run tsc && lerna run build",
-    "start": "cd example && yarn start",
+    "start": "node_modules/.bin/next example",
     "example": "yarn tsc && cd example && yarn dev"
   },
   "workspaces": [
